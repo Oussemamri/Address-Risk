@@ -9,6 +9,11 @@ A NestJS-based API service that allows you to register French addresses and retr
 - **Dockerized**: Easily deployable with Docker and Docker Compose
 - **Persistent Storage**: SQLite database with volume mounting for data persistence
 
+## 🌍 Live Demo
+
+- **Frontend Application**: [https://address-risk-frontend.vercel.app/](https://address-risk-frontend.vercel.app/)
+- **API Endpoint**: [http://63.178.19.158.nip.io](http://63.178.19.158.nip.io)
+
 ## 📋 Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) (for containerized setup)
@@ -57,6 +62,11 @@ Searches for an address and stores it in the database.
 **Endpoint:**
 ```
 POST /api/addresses
+```
+
+**Live API URL:**
+```
+POST http://63.178.19.158.nip.io/api/addresses
 ```
 
 **Request Body:**
@@ -110,6 +120,11 @@ Retrieves risk information for a previously registered address.
 **Endpoint:**
 ```
 GET /api/addresses/{id}/risks
+```
+
+**Live API URL:**
+```
+GET http://63.178.19.158.nip.io/api/addresses/{id}/risks
 ```
 
 **Parameters:**

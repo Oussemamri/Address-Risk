@@ -21,6 +21,13 @@ async function bootstrap() {
     }),
   );
   
+  // Enable CORS for specific origin
+  app.enableCors({
+    origin: 'https://address-risk-frontend.vercel.app',
+    methods: ['GET', 'POST', 'OPTIONS'],
+    credentials: true,
+  });
+  
   await app.listen(process.env.PORT || 8000);
 }
 bootstrap();
